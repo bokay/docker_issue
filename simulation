@@ -7,5 +7,14 @@ rm -rf build
 
 git checkout master
 docker-compose exec application mix deps.get
+docker-compose exec application mix test
+
+git checkout other_branch
+docker-compose exec application mix test
+touch deps/test
+
+git checkout master
+docker-compose exec application mix test
+
 
 docker-compose stop
