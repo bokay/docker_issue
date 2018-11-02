@@ -7,11 +7,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app
-      - _build:/app/_build
       - deps:/app/deps
     tty: true
 
-# volumes defined for use in above configuration
 volumes:
   _build:
   deps:
