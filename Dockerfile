@@ -1,5 +1,5 @@
-FROM civilcode/elixir-dev:1.7.3a
+FROM alpine:3.7
 
 WORKDIR /app
 
-CMD ["/bin/bash"]
+CMD ["/bin/sh"]

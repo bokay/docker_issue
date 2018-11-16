@@ -7,10 +7,10 @@ rm -rf deps
 docker-compose exec application mkdir deps
 docker-compose exec application touch /app/deps/test
 
-echo "Files in the container"
+echo "Files in the container:"
 docker-compose exec application ls
 
-echo "Files in the host"
+echo "Files in the host(should be empty):"
 ls deps
 
 docker-compose stop
